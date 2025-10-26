@@ -2,6 +2,7 @@
 
 import { WalletConnect } from '@/components/WalletConnect';
 import { EventCreator } from '@/components/EventCreator';
+import { EventList } from '@/components/EventList';
 
 export default function Home() {
   return (
@@ -52,6 +53,11 @@ export default function Home() {
           {/* Event Creator */}
           <div className="glass-effect rounded-3xl p-8 md:p-12 mb-20 shadow-2xl hover-lift">
             <EventCreator />
+          </div>
+
+          {/* Event List - NUEVO COMPONENTE */}
+          <div className="glass-effect rounded-3xl p-8 md:p-12 mb-12 shadow-2xl hover-lift">
+            <EventList />
           </div>
 
           {/* Features Grid Mejorado */}
